@@ -1,4 +1,5 @@
 const SearchBookmark = ()=>{
+    <h1>Search</h1>
     return <>{error.message}</>;
 
         } 
