@@ -1,6 +1,6 @@
 const express = require("express");
 const { createBookmark } = require("../controllers/BMController");
-const { getAllBookmarks, findBookmarkById, createBookmark, updateBookmark } = require("../controllers/BookmarksController");
+const { getAllBookmarks, findBookmarkById, createBookmark, updateBookmark } = require("../controllers/BMController");
 const authToken = require("../middlewares/authenticateToken");
 
 const router = express.Router();
