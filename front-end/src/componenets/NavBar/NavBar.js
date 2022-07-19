@@ -62,22 +62,18 @@ const Navbar = () => {
                             </li>
                           <li>
                             
-                          {if Bookmark:total>6{"}"}
-<button class="btn btn-primary mx-auto" id="showMoreButton" type="button" data-toggle="collapse" data-target="#collapse-{embed:park_url}-{park_facilities_relate:url_title}" aria-expanded="false" aria-controls="collapseExample" onclick="showLess()">SHOW MORE</button>
-{/if}       
-
-<script>
-    var status = "less";
-    function showLess() {
-        if (status == "less") {
-            document.getElementById("showMoreButton").innerText = "SHOW LESS";
-            status = "more";
-        } else if (status == "more") {
-            document.getElementById("showMoreButton").innerText = "SHOW MORE";
-            status = "less"
-        }
+                          var status = "less";
+function showLess() {
+    if (status == "less") {
+      document.getElementById("showMoreButton").id = "showLessButton";
+        document.getElementById("showMoreButton").innerText = "SHOW LESS";
+        status = "more";
+    } else if (status == "more") {
+      document.getElementById("showLessButton").id = "showMoreButton";
+        document.getElementById("showMoreButton").innerText = "SHOW MORE";
+        status = "less"
     }
-</script>
+}
                           </li>
 
                         </ul>
