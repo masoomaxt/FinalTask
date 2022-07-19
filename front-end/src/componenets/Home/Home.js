@@ -5,7 +5,7 @@ const Home = () => {
     class BookmarkList extends React.Component {
         render() {
           const { bookmark, deleteBookmark, updateBookmarks } = this.props;
-      <h1>Add Bookmark</h1>
+      <h1>Add a Bookmark</h1>
           return (
             <tr className="bookmark-wrapper">
               <td>
